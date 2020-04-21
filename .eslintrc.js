@@ -3,7 +3,6 @@ module.exports = {
     'standard',
     'prettier',
     'prettier/standard',
-    'plugin:jsx-a11y/recommended',
     'eslint:recommended',
     'plugin:react/recommended',
   ],
@@ -21,26 +20,18 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: ['babel', 'jsx-a11y', 'react', 'prettier', 'standard'],
+  plugins: ['babel', 'react', 'prettier', 'standard'],
   rules: {
     'no-console': 1,
-    'jsx-a11y/anchor-is-valid': 0,
-    'jsx-a11y/label-has-for': 0,
     'react/jsx-filename-extension': 0,
     'react/prop-types': 1,
     'eol-last': 1,
     'comma-dangle': 0,
-    'jsx-a11y/no-autofocus': [
-      2,
-      {
-        ignoreNonDOM: true,
-      },
-    ],
     'react/jsx-uses-vars': ['error'],
     'react/jsx-uses-react': 1,
     'no-unused-vars': ['warn', { vars: 'local', args: 'none', ignoreRestSiblings: true }],
     'space-before-function-paren': 0,
-    'prettier/prettier': 2
+    'prettier/prettier': 2,
   },
   settings: {
     react: {
